@@ -1,9 +1,66 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Sarah Wheeler</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eae26a74ee.js" crossorigin="anonymous"></script>
+    <script src="javascript/scripts.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div>
+        <a class="name" href="index.html">Sarah Wheeler</a>
+        <nav class="desktop">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <i id="mobile-nav-icon" class="fa-solid fa-bars" onclick="showHideMenu()"></i>
+          <ul id="mobile-nav-list" style="display: none;">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Main Content-->
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Senior Front-End Web Developer with more than 13 years of experience, almost exclusively in the financial services advertising space. I pick up new programming languages quickly, and take pride in writing clean, well-organized code. Along with a wealth of experience with Javascript, HTML, and CSS development, I am proficient in many Adobe Suite programs and other design tools, such as Figma. I have experience with Vue and React and many of the libraries associated with those languages, such as NodeJS, Vuetify, Vuex, and Remotion. I am currently working on a certification in Full-Stack Web Development through Codecademy.</p>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="icon-container">
+          <i id="html5" class="fab fa-html5" onclick="changeText(this)"></i>
+          <i id="css3" class="fab fa-css3-alt" onclick="changeText(this)"></i>
+          <i id="js" class="fab fa-js" onclick="changeText(this)"></i>
+          <i id="vuejs" class="fab fa-vuejs" onclick="changeText(this)"></i>
+          <i id="react" class="fab fa-react" onclick="changeText(this)"></i>
+          <i id="figma" class="fab fa-figma" onclick="changeText(this)"></i>
+          <i id="npm" class="fab fa-npm" onclick="changeText(this)"></i>
+          <i id="node" class="fab fa-node" onclick="changeText(this)"></i>
+          <i id="git" class="fab fa-git" onclick="changeText(this)"></i>
+        </div>
+        <div id="skills-text" class="text-container" style="display: none"></div>
+      </section>
+      <section id="projects">
+        <h2>Project Showcase</h2>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <span class="copyright">&copy; 2024 - Designed and Developed in Colorado, USA</span>
+    </footer>
+  </body>
 </html>

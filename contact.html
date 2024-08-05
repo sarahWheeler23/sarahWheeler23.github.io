@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eae26a74ee.js" crossorigin="anonymous"></script>
+    <script src="javascript/scripts.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div>
+        <a class="name" href="index.html">Sarah Wheeler</a>
+        <nav class="desktop">
+          <ul>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <i id="mobile-nav-icon" class="fa-solid fa-bars" onclick="showHideMenu()"></i>
+          <ul id="mobile-nav-list" style="display: none;">
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Main Content-->
+    <main>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you like what you've seen here, click below to view my resume, check out my LinkedIn profile or GitHub repositories, or contact me by email.</p>
+        <div class="icon-container">
+          <a href="./files/Sarah_Wheeler_Resume_2024.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+          <a href="https://www.linkedin.com/in/sarah-wheeler-098615284" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+          <a href="https://github.com/sarahWheeler23" target="_blank"><i class="fab fa-github icon"></i></a>
+          <a href="mailto:sarah@wheeler.group" target="_blank"><i class="fas fa-envelope-square icon"></i></a>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <span class="copyright">&copy; 2024 - Designed and Developed in Colorado, USA</span>
+    </footer>
+  </body>
+</html>
